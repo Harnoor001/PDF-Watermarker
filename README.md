@@ -1,22 +1,37 @@
-# 🖋️ PDF Watermarker – Add Watermarks to PDFs in Google Colab
+# 🖋️ PDF Watermarker (Text + Image) – Google Colab
 
-This Google Colab-based PDF Watermarker lets you add custom **text watermarks** to every page of a PDF file. It requires no local setup and runs entirely in the cloud.
-
----
-
-## 🚀 Features
-
-- 📄 Upload any PDF file via Colab
-- ✍️ Add custom watermark text (e.g., "CONFIDENTIAL", your name, etc.)
-- 🔄 Automatically applies the watermark to **all pages**
-- 💻 100% cloud-based — no installation or setup on your device
-- 📥 Download the final watermarked PDF with one click
+This Google Colab tool allows you to watermark PDF files with both custom **text** and an **image/logo**. No installation is required — everything runs directly in the cloud!
 
 ---
 
-## 🛠️ Requirements
+## ✅ Features
 
-Make sure to install the following Python libraries in Colab before running:
+- 📄 Upload any PDF
+- 🔠 Add **custom text watermark** (your message, name, "CONFIDENTIAL", etc.)
+- 🖼️ Add an **image watermark** (like a logo or stamp)
+- 📍 Choose exact **X-Y position** for both text and image
+- 📏 Set **font size** and **image size**
+- 🔁 Applies watermark to **all pages**
+- 📥 One-click download of the final watermarked PDF
 
-```python
-!pip install PyPDF2 reportlab
+---
+
+## 🛠️ Tech Stack
+
+- Python 3  
+- [PyPDF2](https://pypi.org/project/PyPDF2/) – for PDF reading/writing  
+- [ReportLab](https://pypi.org/project/reportlab/) – for drawing the text/image watermark  
+- Google Colab – to run everything without setup
+
+---
+
+## ▶️ How to Use
+
+1. Open the notebook in [Google Colab](https://colab.research.google.com/)
+2. Upload your **PDF** file and **image** (logo or stamp)
+3. Enter:
+   - Watermark **text**
+   - **Font size** and **position** for text
+   - **Position** and **size** of the image
+4. The tool will apply the combined watermark to all pages
+5. Download the final file from `/content/text_image_watermarke
